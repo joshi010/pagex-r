@@ -1,0 +1,137 @@
+.articulos-barra{
+    max-width: 300px;
+    padding: 10px;
+    height: 480px;
+    border-radius: 8px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 30px lightgrey;
+}
+
+.articulos-barra::-webkit-scrollbar {
+    width: 2px;
+}
+
+.articulos-barra::-webkit-scrollbar-thumb {
+    background: radial-gradient(blueviolet, transparent)
+}
+
+.articulos-barra ul{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+    gap: 10px;
+}
+
+.ads-and-stuff{
+    display: flex;
+    position: sticky;
+    top: 10px;
+    flex-direction: column;
+}
+
+.articulos-barra li{
+    list-style: none;
+    background-color: #fff;
+    min-height: 50px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.barra-art{
+    display: flex;
+    gap: 15px;
+}
+
+.contenido{
+    min-height: 100%;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 30px lightgrey;
+    width: 630px;
+    text-align: justify;
+}
+
+.contenido h1{
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+.contenido ul{
+    list-style-position: inside;
+}
+
+.contenido li{
+    margin: 20px 0;
+}
+
+.contenido p{
+    margin: 15px 0;
+}
+
+.contenido h2{
+    margin: 30px 0 10px;
+}
+
+.contenido-contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.idk{
+    min-height: 200px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 977px){
+    .ads-and-stuff{
+        position: absolute;
+        right: 100%;
+    }
+
+    .articulos-barra{
+        background-color: #f5f5f5;
+    }
+}
+
+
+@media only screen and (min-width: 1710px){ 
+
+    .contenido{
+        width: 800px;
+    }
+
+    .contenido-contenedor{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .contenido p{
+        font-size: 18px;
+        margin: 30px 0;
+    }
+
+    .contenido h1{
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+
+    .contenido h2{
+        margin: 70px 0 0px;
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+    .contenido li{
+        font-size: 17px;
+        margin: 25px 0;
+    }
+
+    .idk{
+        height: fit-content;
+        width: 400px;
+    }
+}

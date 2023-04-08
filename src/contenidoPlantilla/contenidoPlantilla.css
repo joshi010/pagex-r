@@ -1,0 +1,25 @@
+.normal-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 11px;
+}
+
+.normal-grid-card{
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 200px 100px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.image-cont-normal-card{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.image-cont-normal-card img{
+    width: 100%;
+}

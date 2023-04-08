@@ -1,0 +1,6 @@
+nav{
+    background: linear-gradient(30deg, #7b21fd, #4a1692);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
