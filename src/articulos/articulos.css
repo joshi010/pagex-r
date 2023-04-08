@@ -7,6 +7,11 @@
     box-shadow: 0px 0px 30px lightgrey;
 }
 
+
+.no-show{
+    display: block;
+}
+
 .articulos-barra::-webkit-scrollbar {
     width: 2px;
 }
@@ -87,13 +92,42 @@
 
 
 @media only screen and (max-width: 977px){
+    .barra-art{
+        flex-direction: column;
+    }
+
+    .no-show, #no-show{
+        display: none;
+    }
+
     .ads-and-stuff{
-        position: absolute;
-        right: 100%;
+        position: unset;
+        display: flex;
+        width: 99%;
+    }
+
+    .articulos-barra h2{
+        margin: 20px 0;
     }
 
     .articulos-barra{
+        height: 200px;
+        max-width: 99%;
         background-color: #f5f5f5;
+    }
+
+    .contenido{
+        padding: 20px 10px;
+        width: 99%;
+    }
+
+    .contenido p{ 
+        font-size: 20px;
+        margin: 75px 0;
+    }
+
+    .contenido h2{
+        margin: 30px 0 -50px;
     }
 }
 

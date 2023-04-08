@@ -52,19 +52,9 @@ body{
     color: rgba(240, 248, 255, 0.699);
 }
 
-button{
-    text-align: center;
-    margin-top: 10px;
-    border: none;
-    background-color: #01ca6a;
-    color: aliceblue;
-    padding: 10px 20px;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 200;
-    cursor: pointer;
-    border-radius: 15px;
-    font-size: 15px;
-    transition: all 0.7s;
+#dos, #uno{
+    text-decoration: none;
+    margin-top: 30px;
 }
 
 button:hover{

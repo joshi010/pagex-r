@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Adsense } from '@ctrl/react-adsense';
 import { Helmet } from "react-helmet";
 import '../specialNav.css';
 import './articulos.css';
 import routeData from "./routeData";
 import ContenidoDinamico from "./contenidodinamico";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Articulos () {
-    const [active, setActive] = useState();
     
 
     return (
@@ -35,17 +34,18 @@ export default function Articulos () {
                     </ul>
                 </div>
                 <Adsense 
+                    className="no-show"
                     client="ca-pub-8147046340459290"
                     slot="1553707869"
-                    style={{display:"inline-block",width:'300px', height:'430px'}}
+                    style={{width:'300px', height:'430px'}}
                     format=""
                 />
-                <Adsense 
+                <Adsense
+                    className="no-show"
+                    id="no-show"
                     client="ca-pub-8147046340459290"
                     slot="3367931532"
-                    style={{display:'block'}}
                     format="fluid"
-
                 />
                 <div className="line">
 

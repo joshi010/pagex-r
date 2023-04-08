@@ -5,6 +5,7 @@ import Nav from './Nav/Nav';
 const Landing = lazy(() => import('./Landing/Landing'));
 const Plantillas = lazy(() => import('./Plantillas/Plantillas'));
 const Articulos = lazy(() => import('./articulos/articulos'));
+const Contacto = lazy(() => import('./contacto/contacto'));
 
 
 const routes = [
@@ -13,13 +14,17 @@ const routes = [
     element: <Landing />
   },
   {
+    path:'/contacto',
+    element: <Contacto />
+  },
+  {
     path: '/plantillas',
     element: <Plantillas />
   },
   {
     path: '/articulos/:articulo?',
     element: <Articulos />
-  }
+  },
 ]
 
 function App() {

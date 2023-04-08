@@ -1,0 +1,16 @@
+.contact-center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.contact-center{
+    width: 50%;
+}
+
+@media only screen and (max-width: 767px){
+    .contact-center{
+        width: 100%;
+    }
+}

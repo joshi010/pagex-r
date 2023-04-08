@@ -35,7 +35,7 @@ export default function Landing() {
                     PON A TU NEGOCIO EN EL MAPA DIGITAL
                 </h1>
                 <h3 id="descript">Especializados en páginas web, ponte donde todos te puedan ver.</h3>
-                <button className="call-to">CONTÁCTANOS</button>
+                <Link to='/contacto'><button className="call-to">CONTÁCTANOS</button></Link>
             </div>
             <div id="right">
                 <div className="img-cont">
@@ -215,7 +215,7 @@ export default function Landing() {
 
         <div className="call-to2 hidden">
             <h1 className="center-text">Contáctanos Ya y Crece Tu Negocio.</h1>
-            <button className="call-to" id="dos">Contáctanos </button>
+            <Link to="/contacto"><button className="call-to button">Contáctanos</button></Link>
         </div>
     </div>
     

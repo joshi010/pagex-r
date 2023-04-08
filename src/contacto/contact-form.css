@@ -1,0 +1,33 @@
+.contact-form-container{
+    width: 100%;
+    border-radius: 8px;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.contact-form-container h2{
+    margin: 20px 0 5px;
+    font-weight: 100;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, select {
+    outline: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 280px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
